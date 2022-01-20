@@ -5,13 +5,17 @@
 
 lista = []
 
-for i in range(3):
-    ker = input('Adj meg egy szót: \t')
-    lista.append(ker)
+beker1 = (input('Adj meg egy szót: \t'))
+beker2 = (input('Adj meg egy szót: \t'))
+beker3 = (input('Adj meg egy szót: \t'))
 
-
+lista.append(beker1)
+lista.append(beker2)
+lista.append(beker3)
 
 def legrovidebb():
-    [len(i) for i in lista]
-    print(f"A legrövidebb szó: {min(lista)}")  
+    for i in range(1):
+        print("A legrövidebb szó: ", min(lista, key=len))
 legrovidebb()
+
+
